@@ -61,16 +61,18 @@
         "poster": "https://upload.wikimedia.org/wikipedia/uk/0/08/Civil_War_2024_film_poster.jpg"
     },
     {
-        "name": "Тестовий фільм",
-        "description": "Самий <b>ЦІКАВИЙ</b> тестовий фільм у світі!!",
+        "name": "ТЕСТОВИЙ ФІЛЬМ",
+        "description": "Самий цікавий <b>ТЕСТОВИЙ</b> фільм!",
         "rating": 10.0,
         "genre": "Цікавинка",
         "actors": [
             "Я",
             "мама",
             "тато",
-            "брат"
+            "брат",
+            "бабуся",
+            "дідусь"
         ],
-        "poster": "https://i5.walmartimages.com/seo/SignMission-OS-NS-D-35-25551-Covid-19-Notice-Sign-Caution-Testing-In-Progress_84b78ac0-cc3a-43a7-baf6-dd9a2b5e358f.e195ee27752ad03dffe8fdc25d10f616.jpeg"
+        "poster": "https://th.bing.com/th/id/OIP.oHiWJRFOI1glb5ikUXZ8bQAAAA?rs=1&pid=ImgDetMain"
     }
 ]

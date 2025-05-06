@@ -12,4 +12,9 @@ BOT_COMMANDS = [
    BotCommand(command="films", description="Перегляд списку фільмів"),
    BotCommand(command="start", description="Почати розмову"),
    BotCommand(command="create_film", description="Додати новий фільм"),
+   BotCommand(command="search_movie", description="Пошук фільма за назвою"),
+   BotCommand(command="filter_movies", description="Пошук фільма за жанром"),
+   BotCommand(command="delete_movie", description="Пошук фільма за назвою"),
+   BotCommand(command="edit_movie", description="Пошук фільма за назвою"),
+   BotCommand(command="rate_movie", description="Пошук фільма за назвою"),
 ]
