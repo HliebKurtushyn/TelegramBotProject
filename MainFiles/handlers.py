@@ -6,9 +6,9 @@ from aiogram.types import URLInputFile
 
 from MainFiles.states import FilmForm, MovieStates, MovieRatingStates
 from utils.data import get_films, add_film, delete_film_by_name, update_film_description, update_film_rating
-from keyboards import films_keyboard_markup, FilmCallback
-from models import Film
-from external import async_log_function_call
+from helpers.keyboards import films_keyboard_markup, FilmCallback
+from helpers.models import Film
+from utils.external import async_log_function_call
 from helpers.commands import (
    FILMS_COMMAND,
    START_COMMAND,
