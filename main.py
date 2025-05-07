@@ -17,6 +17,7 @@ async def main() -> None:
     )
     
     try:
+        print("---Bot started---")
         await dp.start_polling(bot)
     except (KeyboardInterrupt, CancelledError):
         print("---Bot stopped---")
