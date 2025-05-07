@@ -8,14 +8,15 @@ from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
 
 from config import BOT_TOKEN as TOKEN
-from MainFiles.handlers import dp
+from mainFiles.handlers import dp
+
 
 async def main() -> None:
     bot = Bot(
         token=TOKEN,
         default=DefaultBotProperties(parse_mode=ParseMode.HTML),
     )
-    
+
     try:
         print("---Bot started---")
         await dp.start_polling(bot)

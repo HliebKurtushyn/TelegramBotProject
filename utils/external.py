@@ -1,6 +1,7 @@
 import logging
 import functools
 
+
 def async_log_function_call(func):
     """Декоратор для логування викликів асинхронних функцій"""
     @functools.wraps(func)

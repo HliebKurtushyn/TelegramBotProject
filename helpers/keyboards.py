@@ -1,10 +1,12 @@
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 from aiogram.filters.callback_data import CallbackData
 
+
 class FilmCallback(CallbackData, prefix="film", sep=";"):
     id: int
 
-def films_keyboard_markup(films_list:list[dict], offset:int|None = None, skip:int|None = None):
+
+def films_keyboard_markup(films_list: list[dict], offset: int | None = None, skip: int | None = None):
     """
     Створює клавіатуру на основі отриманого списку фільмів
     Приклад використання
@@ -13,7 +15,7 @@ def films_keyboard_markup(films_list:list[dict], offset:int|None = None, skip:in
             reply_markup=films_keyboard_markup(films_list)
         )
     """
-   
+
     # Створюємо та налаштовуємо клавіатуру
     builder = InlineKeyboardBuilder()
 
