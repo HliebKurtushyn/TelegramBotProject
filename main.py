@@ -8,7 +8,7 @@ from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
 
 from config import BOT_TOKEN as TOKEN
-from handlers import dp
+from MainFiles.handlers import dp
 
 async def main() -> None:
     bot = Bot(
