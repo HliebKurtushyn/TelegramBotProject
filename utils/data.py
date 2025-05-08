@@ -2,7 +2,7 @@ import json
 
 
 def get_films(
-    file_path: str = "data.json", film_id: int | None = None
+    file_path: str = "data/data.json", film_id: int | None = None
 ) -> list[dict] | dict:
     with open(file_path, "r") as fp:
         films = json.load(fp)
@@ -13,7 +13,7 @@ def get_films(
 
 def add_film(
     film: dict,
-    file_path: str = "data.json",
+    file_path: str = "data/data.json",
 ):
     films = get_films(file_path=file_path, film_id=None)
     if films:
@@ -27,7 +27,7 @@ def add_film(
             )
 
 
-def delete_film_by_name(name: str, file_path: str = "data.json") -> bool:
+def delete_film_by_name(name: str, file_path: str = "data/data.json") -> bool:
     films = get_films(file_path=file_path)
     updated_films = [film for film in films if film.get("name") != name]
 
@@ -40,7 +40,7 @@ def delete_film_by_name(name: str, file_path: str = "data.json") -> bool:
     return True  # фільм було видалено
 
 
-def update_film_description(name: str, new_description: str, file_path: str = "data.json") -> bool:
+def update_film_description(name: str, new_description: str, file_path: str = "data/data.json") -> bool:
     films = get_films(file_path=file_path)
     found = False
 
@@ -59,7 +59,7 @@ def update_film_description(name: str, new_description: str, file_path: str = "d
     return True  # опис оновлено
 
 
-def update_film_rating(name: str, new_rating: float, file_path: str = "data.json") -> bool:
+def update_film_rating(name: str, new_rating: float, file_path: str = "data/data.json") -> bool:
     films = get_films(file_path=file_path)
     found = False
 
