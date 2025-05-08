@@ -1,1 +1,6 @@
 config.py
+messages.log
+utils/__pycache__
+mainFiles/__pycache__
+helpers/__pycache__
+__pycache__
