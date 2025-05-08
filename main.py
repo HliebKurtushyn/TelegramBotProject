@@ -9,6 +9,7 @@ from aiogram.enums import ParseMode
 
 from config import BOT_TOKEN as TOKEN
 from mainFiles.handlers import dp
+from helpers.commands import BOT_COMMANDS
 
 
 async def main() -> None:
@@ -17,6 +18,8 @@ async def main() -> None:
         default=DefaultBotProperties(parse_mode=ParseMode.HTML),
     )
 
+    await bot.set_my_commands(BOT_COMMANDS)
+    
     try:
         print("---Bot started---")
         await dp.start_polling(bot)
