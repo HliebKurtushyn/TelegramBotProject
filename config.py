@@ -1,1 +1,2 @@
-BOT_TOKEN = "8179798526:AAHFsL4KgMrQ7Ai8I-aY5DJnGmk6XNIcwEY"
+from os import getenv
+BOT_TOKEN = getenv("BOT_TOKEN")
