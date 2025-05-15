@@ -1,4 +1,4 @@
-config.py
+.env
 messages.log
 utils/__pycache__
 mainFiles/__pycache__
