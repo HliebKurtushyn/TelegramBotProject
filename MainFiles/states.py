@@ -21,3 +21,8 @@ class MovieStates(StatesGroup):
 class MovieRatingStates(StatesGroup):
     rate_query = State()
     set_rating = State()
+
+
+class MovieFilterStates(StatesGroup):
+    filter_criteria = State()
+    filter_value = State()

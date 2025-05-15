@@ -59,30 +59,5 @@
             "Greg Hilld"
         ],
         "poster": "https://upload.wikimedia.org/wikipedia/uk/0/08/Civil_War_2024_film_poster.jpg"
-    },
-    {
-        "name": "ТЕСТОВИЙ ФІЛЬМ",
-        "description": "Самий цікавий <b>ТЕСТОВИЙ</b> фільм!",
-        "rating": 8,
-        "genre": "Цікавинка",
-        "actors": [
-            "Я",
-            "мама",
-            "тато",
-            "брат",
-            "бабуся",
-            "дідусь"
-        ],
-        "poster": "https://th.bing.com/th/id/OIP.oHiWJRFOI1glb5ikUXZ8bQAAAA?rs=1&pid=ImgDetMain"
-    },
-    {
-        "name": "ЩЕ ОДИН ТЕСТ",
-        "description": "Ооо тести",
-        "rating": 0.0,
-        "genre": "Тестик",
-        "actors": [
-            "Я і все"
-        ],
-        "poster": "https://www.arnaud-dauphin.com/wp-content/uploads/2024/07/1720825936_guide-debutant-maitriser-la-pose-longue-en-photographie.jpg"
     }
 ]

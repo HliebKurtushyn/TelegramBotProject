@@ -1,5 +1,6 @@
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 from aiogram.filters.callback_data import CallbackData
+from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 
 class FilmCallback(CallbackData, prefix="film", sep=";"):
@@ -7,14 +8,14 @@ class FilmCallback(CallbackData, prefix="film", sep=";"):
 
 
 def films_keyboard_markup(films_list: list[dict], offset: int | None = None, skip: int | None = None):
-    """
-    Створює клавіатуру на основі отриманого списку фільмів
-    Приклад використання
-    >>> await message.answer(
-            text="Some text",
-            reply_markup=films_keyboard_markup(films_list)
-        )
-    """
+    # """
+    # Створює клавіатуру на основі отриманого списку фільмів
+    # Приклад використання
+    # >>> await message.answer(
+    #         text="Some text",
+    #         reply_markup=films_keyboard_markup(films_list)
+    #     )
+    # """
 
     # Створюємо та налаштовуємо клавіатуру
     builder = InlineKeyboardBuilder()
@@ -30,3 +31,13 @@ def films_keyboard_markup(films_list: list[dict], offset: int | None = None, ski
     # Повертаємо клавіатуру у вигляді InlineKeyboardMarkup
     builder.adjust(1, repeat=True)
     return builder.as_markup()
+
+def filter_criteria_markup():
+    buttons = [
+        [InlineKeyboardButton(text="За назвою", callback_data="search_by:title")],
+        [InlineKeyboardButton(text="За жанром", callback_data="search_by:genre")],
+        [InlineKeyboardButton(text="За актором", callback_data="search_by:actors")],
+    ]
+    
+    return InlineKeyboardMarkup(inline_keyboard=buttons)
+    
